@@ -1,11 +1,12 @@
 {
   "name": "single-source2",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "\"# single-source2\"",
   "main": "gulp.js",
   "dependencies": {
     "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "user": "0.0.0"
   },
   "devDependencies": {},
   "scripts": {

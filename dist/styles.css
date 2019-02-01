@@ -7094,6 +7094,60 @@ input[type=number]::-webkit-outer-spin-button {
 .ui.dimmer:not(.inverted)::-webkit-scrollbar-thumb {
   background: white; }
 
+/* Fonts */
+/* Colors */
+/* To clean */
+/*Responsive classes*/
+.ui.modal {
+  margin: 0 !important;
+  transform: translate(-50%, 0) !important;
+  top: 80px !important;
+  width: 100% !important;
+  border-radius: 0.5rem;
+  animation-duration: 0s !important; }
+  .ui.modal > .header {
+    background-color: #024f9d;
+    color: #fff;
+    font-weight: 600 !important;
+    font-size: 1.231rem !important;
+    line-height: 1.846em !important;
+    padding: 0.5em 3.7rem 0.5em 1.846rem; }
+  .ui.modal > .content {
+    min-height: 100px; }
+  .ui.modal > .close {
+    color: #fff;
+    top: 0.67rem !important;
+    right: 1.846rem !important;
+    font-size: 1.231rem;
+    line-height: 1.846em;
+    padding: 0;
+    margin: 0; }
+  .ui.modal > .actions {
+    padding: 0.5em 1.846rem;
+    background: #fff;
+    border-top: 1px solid rgba(216, 216, 216, 0.5); }
+  .ui.modal .small {
+    color: #666;
+    font-size: 0.857rem;
+    line-height: 1.538em; }
+  .ui.modal.scroll {
+    margin: 0 !important; }
+  .ui.modal.small {
+    max-width: 300px; }
+  .ui.modal.normal {
+    max-width: 720px; }
+    .ui.modal.normal .content {
+      max-height: 380px; }
+  .ui.modal.large {
+    max-width: 100%;
+    top: 0 !important; }
+    .ui.modal.large .content {
+      height: calc(100vh - 100px); }
+
+.modals.dimmer .ui.scrolling.modal {
+  position: absolute !important;
+  margin: 0 !important; }
+
 @media only screen and (min-width: 1600px) {
   .ui.container {
     width: 90%;

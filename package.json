@@ -1,7 +1,7 @@
 {
-  "name": "single-source",
+  "name": "single-source2",
   "version": "1.1.0",
-  "description": "\"# single-source\"",
+  "description": "\"# single-source2\"",
   "main": "gulp.js",
   "dependencies": {
     "gulp": "^4.0.0",

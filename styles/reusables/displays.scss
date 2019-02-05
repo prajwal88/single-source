@@ -11,8 +11,7 @@
     display: inline !important;
 }
 
-/* Mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1100px) {
     [class*="mobile hidden"],
     [class*="tablet only"]:not(.mobile),
     [class*="computer only"]:not(.mobile),
@@ -21,55 +20,9 @@
     [class*="or lower hidden"] {
       display: none !important;
     }
-    .display-mobile-none {
-      display: none !important;
-    }
-    .display-mobile-inline {
-      display: inline !important;
-    }
-    .display-mobile-inline-block {
-      display: inline-block !important;
-    }
-    .display-mobile-block {
-      display: block !important;
-    }
-    .display-mobile-flex {
-      display: -ms-flexbox !important;
-      display: flex !important;
-    }
 }
-
-/* Tablet / iPad Portrait */
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-    [class*="mobile only"]:not(.tablet),
-    [class*="tablet hidden"],
-    [class*="computer only"]:not(.tablet),
-    [class*="large screen only"]:not(.tablet),
-    [class*="widescreen only"]:not(.tablet),
-    [class*="or lower hidden"]:not(.mobile) {
-      display: none !important;
-    }
-    .display-tablet-none {
-      display: none !important;
-    }
-    .display-tablet-inline {
-      display: inline !important;
-    }
-    .display-tablet-inline-block {
-      display: inline-block !important;
-    }
-    .display-tablet-block {
-      display: block !important;
-    }
-    .display-tablet-flex {
-      display: -ms-flexbox !important;
-      display: flex !important;
-    }    
-    
-  }
- 
-/* Computer / Desktop / iPad Landscape */
-@media only screen and (min-width: 1200px) {
+  
+@media only screen and (min-width: 1101px) {
     [class*="mobile only"]:not(.computer),
     [class*="tablet only"]:not(.computer),
     [class*="computer hidden"],
@@ -78,21 +31,4 @@
     [class*="or lower hidden"]:not(.tablet):not(.mobile) {
       display: none !important;
     }
-    .display-computer-none {
-      display: none !important;
-    }
-    .display-computer-inline {
-      display: inline !important;
-    }
-    .display-computer-inline-block {
-      display: inline-block !important;
-    }
-    .display-computer-block {
-      display: block !important;
-    }
-    .display-computer-flex {
-      display: -ms-flexbox !important;
-      display: flex !important;
-    }
 }
-

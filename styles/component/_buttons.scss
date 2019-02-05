@@ -1,0 +1,111 @@
+// buttons
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+.d-flex-btns {
+    display: flex;
+    align-items: center;
+}
+// base button styles
+.sb-btn {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    user-select: none;
+    outline: 0;
+    display: inline-block;
+    margin-left: 0.25rem;
+    border: 1px solid;
+    color:#fff;
+    cursor:pointer;
+    @include border-radius(4px);
+    text: {
+		transform: capitalize;
+		decoration: none;
+	}
+}
+
+// button lin
+.sb-btn-link {
+    border:0px;
+    text-decoration: underline;
+    &:hover {
+        font-weight:$font-weight-bold;
+    }
+}
+
+// button sizes
+.sb-btn-small {
+    height:24px; 
+    padding: 0.25rem 0.5rem;
+    font-size:$font-size-xs;
+}
+.sb-btn-normal {
+    height:32px; 
+    padding: 0.5rem 1rem;
+    font-size:$font-size-sm;
+}
+.sb-btn-big {
+  height:40px;
+  padding: 0.5rem 2rem;
+  font-size:$font-size-normal;
+}
+
+// disabled button
+.sb-btn-disabled {
+    background-color: $gray-100;
+    color:$gray-200;
+    border:1px solid $gray-100;
+}
+.sb-btn-outline-disabled {
+    background-color: $white-color;
+    color:$gray-100;
+    border:1px solid $gray-100;
+}
+
+// default outline colored btns
+.sb-btn-outline-blue{
+    @include btn-theme-bgwhite($blue);
+} 
+.sb-btn-outline-green{
+    @include btn-theme-bgwhite($green);
+} 
+.sb-btn-outline-orange{
+    @include btn-theme-bgwhite($orange);
+} 
+.sb-btn-outline-red{
+    @include btn-theme-bgwhite($red);
+} 
+.sb-btn-outline-gray{
+    @include btn-theme-bgwhite($gray-800);
+} 
+
+// default colored btns
+.sb-btn-primary{
+    @include btn-theme($primary-color);
+} 
+.sb-btn-secondary{
+    @include btn-theme($secondary-color);
+}
+.sb-btn-tertiary{
+    @include btn-theme($tertiary-color);
+}
+
+.sb-btn-success{
+    @include btn-theme($success-color);
+} 
+.sb-btn-info{
+    @include btn-theme($info-color);
+}
+.sb-btn-warning{
+    @include btn-theme($warning-color);
+} 
+.sb-btn-error{
+    @include btn-theme($danger-color);
+} 
